@@ -1,4 +1,4 @@
-
+//Etape 2
 
 function getComputerChoice(){
 
@@ -24,4 +24,11 @@ let finalValue = Math.floor(convertValue)
 
 console.log(getComputerChoice())
 
+//Etape 3
 
+function getHumanChoice(){
+    let message = prompt("SHI-FOU-MI")
+    console.log(message)
+}
+
+getHumanChoice()
