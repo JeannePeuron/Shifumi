@@ -21,7 +21,3 @@ let finalValue = Math.floor(convertValue)
 }
        
 
-
-console.log(getComputerChoice())
-
-
