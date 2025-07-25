@@ -21,6 +21,8 @@ let finalValue = Math.floor(convertValue)
 }
        
 
+<<<<<<< HEAD
+=======
 
 //console.log(getComputerChoice())
 
@@ -32,6 +34,7 @@ function getHumanChoice(){
         return message
 }
 
+<<<<<<< HEAD
 //getHumanChoice()
 
 //Etape 4
@@ -84,3 +87,7 @@ console.log(playRound(humanSelection, computerSelection))
 
 
     
+=======
+getHumanChoice()
+>>>>>>> 1c2bdab1793ad4787da4d2910026e070d60e2294
+>>>>>>> 6415d8492f33099a50ad62a258c4b767ebeda3bd
