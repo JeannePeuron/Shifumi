@@ -84,8 +84,6 @@ function playRound(humanChoice, computerChoice){
 
 //console.log(playRound(humanSelection, computerSelection))
 
-<<<<<<< HEAD
-=======
 
 function playGame() {
 
@@ -102,4 +100,3 @@ function playGame() {
 }
 
 console.log(playGame())
->>>>>>> c46b7300a23b51911fc874992e49a9b084283711
