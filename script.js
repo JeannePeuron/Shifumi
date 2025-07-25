@@ -11,6 +11,8 @@ let convertValue = value * 3
 
 let finalValue = Math.floor(convertValue)
 
+//console.log(finalValue)
+
     if(finalValue == pierre){
         return "pierre"
     } else if (finalValue == feuille){
@@ -18,11 +20,10 @@ let finalValue = Math.floor(convertValue)
     } else if (finalValue == ciseaux){
         return "ciseaux"
     }
+
+    
 }
        
-
-<<<<<<< HEAD
-=======
 
 //console.log(getComputerChoice())
 
@@ -32,9 +33,9 @@ function getHumanChoice(){
     let message = prompt("SHI-FOU-MI")
     console.log(message)
         return message
+       
 }
 
-<<<<<<< HEAD
 //getHumanChoice()
 
 //Etape 4
@@ -44,50 +45,58 @@ let computerScore = 0
 
 //Etape 5
 
+
+
 function playRound(humanChoice, computerChoice){
     
-        for(let choice = 0; choice < 10 ; choice++){
+        for(let choice = 0; choice < 5 ; choice++){
 
             if (humanChoice === "ciseaux" && computerChoice === "feuille"){
-                return "ciseaux bat feuille!"
+                return "Vous gagnez !! Ciseaux bat Feuille!"
             }
-            if (humanChoice === "ciseaux" && computerChoice === "pierre"){
-                return "pierre bat ciseaux!"
+                else if (humanChoice === "feuille" && computerChoice === "ciseaux"){
+                return "Vous perdez !! Ciseaux bat Feuille!"
+            } 
+
+            else if (humanChoice === "ciseaux" && computerChoice === "pierre"){ 
+                return "Vous perdez !! Pierre bat Ciseaux!"
             }
-            if (humanChoice === "ciseaux" && computerChoice === "ciseaux"){
-                return "match nul!"
+            else if (humanChoice === "pierre" && computerChoice === "ciseaux"){
+                return "Vous gagnez !! Pierre bat Ciseaux!"
+            }
+             else if (humanChoice === "ciseaux" && computerChoice === "ciseaux" || humanChoice === "feuille" && computerChoice === "feuille" || humanChoice === "pierre" && computerChoice === "pierre"){
+                return "Egalité ! Match nul!"
             }
 
-            if (humanChoice === "pierre" && computerChoice === "feuille"){
-                return "feuille bat pierre!"
+            else if (humanChoice === "pierre" && computerChoice === "feuille") { 
+                return "Vous perdez !! Feuille bat Pierre!"
             }
-            if (humanChoice === "pierre" && computerChoice === "pierre"){
-                return "match nul!"
+            else if (humanChoice === "feuille" && computerChoice === "pierre" ){
+                return "Vous gagnez !! Feuille bat Pierre!"
             }
-            if (humanChoice === "pierre" && computerChoice === "ciseaux"){
-                return "pierre bat ciseaux!"
-            }
-   
-            if (humanChoice === "feuille" && computerChoice === "ciseaux"){
-                return "ciseaux bat feuille!"
-            }
-            if (humanChoice === "feuille" && computerChoice === "pierre"){
-                return "feuille bat pierre!"
-            }
-            if (humanChoice === "feuille" && computerChoice === "feuille"){
-                return "match nul!"
-            }
+
+
         }
+
+        //console.log(humanChoice.toLowerCase(humanChoice))
+
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-console.log(playRound(humanSelection, computerSelection))
+
+//console.log(playRound(humanSelection, computerSelection))
 
 
+function playGame() {
 
 
+    for(let i = 0 ; i < 5 ; i++){
+
+        const humanChoice = getHumanChoice ()
+        const computerChoice = getComputerChoice ()
+        //playRound(humanChoice, computerChoice)
+        console.log(playRound (humanChoice, computerChoice))
+    }
     
-=======
-getHumanChoice()
->>>>>>> 1c2bdab1793ad4787da4d2910026e070d60e2294
->>>>>>> 6415d8492f33099a50ad62a258c4b767ebeda3bd
+
+}
+
+console.log(playGame())
