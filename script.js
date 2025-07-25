@@ -21,20 +21,16 @@ let finalValue = Math.floor(convertValue)
 }
        
 
-<<<<<<< HEAD
-=======
-
 //console.log(getComputerChoice())
 
 //Etape 3
 
 function getHumanChoice(){
     let message = prompt("SHI-FOU-MI")
-    console.log(message)
+    //console.log(message)
         return message
 }
 
-<<<<<<< HEAD
 //getHumanChoice()
 
 //Etape 4
@@ -83,11 +79,3 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 console.log(playRound(humanSelection, computerSelection))
 
-
-
-
-    
-=======
-getHumanChoice()
->>>>>>> 1c2bdab1793ad4787da4d2910026e070d60e2294
->>>>>>> 6415d8492f33099a50ad62a258c4b767ebeda3bd
